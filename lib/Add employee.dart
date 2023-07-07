@@ -129,11 +129,10 @@ SizedBox(height: screenH/40,),
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 5),
                 child: TextField(
-                  decoration: InputDecoration(
+                  decoration: InputDecoration(suffixIcon: IconButton(onPressed: () {
+                    
+                  }, icon: Icon(Icons.calendar_today_rounded)),
                     labelText: '08/11/2001',
-                    icon: IconButton(onPressed: () {
-                      
-                    }, icon: Icon(Icons.date_range)),
                     border: OutlineInputBorder(borderRadius: BorderRadius.circular(10),
                       borderSide: BorderSide(
                         color: Colors.grey,
@@ -149,7 +148,9 @@ SizedBox(height: screenH/40,),
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 5),
                 child: TextField(
-                  decoration: InputDecoration(
+                  decoration: InputDecoration(suffixIcon: IconButton(onPressed: () {
+                    
+                  }, icon: Icon(Icons.keyboard_arrow_down)),
                     labelText: 'select one',
                     border: OutlineInputBorder(borderRadius: BorderRadius.circular(10),
                       borderSide: BorderSide(
@@ -166,7 +167,9 @@ SizedBox(height: screenH/40,),
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 5),
                 child: TextField(
-                  decoration: InputDecoration(
+                  decoration: InputDecoration(suffixIcon: IconButton(onPressed: () {
+                    
+                  }, icon: Icon(Icons.keyboard_arrow_down_outlined)),
                     labelText: 'Select one',
                     border: OutlineInputBorder(borderRadius: BorderRadius.circular(10),
                       borderSide: BorderSide(
