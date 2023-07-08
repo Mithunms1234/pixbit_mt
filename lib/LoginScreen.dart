@@ -25,7 +25,6 @@ class _LoginScreenState extends State<LoginScreen> {
         body: body);
     var responseBody = jsonDecode(response.body);
     print(responseBody);
-
     if (responseBody["message"] == "User Logged in") {
       SharedPreferences sharedpref = await SharedPreferences.getInstance();
       await sharedpref.setString(
@@ -71,6 +70,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   fontWeight: FontWeight.bold)),
                           Text("Please login to your account",
                               style: TextStyle(fontSize: screenW / 20)),
+
                         ],
                       ),
                     ),
@@ -194,6 +194,9 @@ class _LoginScreenState extends State<LoginScreen> {
                                         fontSize: 20,
                                         fontWeight: FontWeight.w600))),
                           ),
+                          FloatingActionButton(onPressed: () {
+                            print(namekey.currentState!.validate());
+                          },)
                         ],
                       ),
                     ),

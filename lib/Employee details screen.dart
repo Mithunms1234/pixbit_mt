@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart';
 
 class EmpoyeeDetailsScreen extends StatefulWidget {
 
@@ -18,11 +19,6 @@ class EmpoyeeDetailsScreen extends StatefulWidget {
 }
 
 class _EmpoyeeDetailsScreenState extends State<EmpoyeeDetailsScreen> {
-
-  addEmployee()
-  {
-
-  }
 
   @override
   Widget build(BuildContext context) {
