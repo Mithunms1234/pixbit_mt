@@ -70,7 +70,6 @@ class _LoginScreenState extends State<LoginScreen> {
                                   fontWeight: FontWeight.bold)),
                           Text("Please login to your account",
                               style: TextStyle(fontSize: screenW / 20)),
-
                         ],
                       ),
                     ),
@@ -194,9 +193,6 @@ class _LoginScreenState extends State<LoginScreen> {
                                         fontSize: 20,
                                         fontWeight: FontWeight.w600))),
                           ),
-                          FloatingActionButton(onPressed: () {
-                            print(namekey.currentState!.validate());
-                          },)
                         ],
                       ),
                     ),
